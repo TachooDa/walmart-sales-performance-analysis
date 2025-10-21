@@ -31,6 +31,18 @@ This project uses a **Walmart Transactions Dataset**, containing sales records f
 
 📊 _The dataset provides both transactional granularity and financial attributes, making it ideal for business performance analytics and insight generation._
 
+## ⚖ Finding Overview
+
+The analysis is based on 9,969 transactions recorded across 100 branches between 2019 and 2023, generating a total revenue of $1.21 million and a net profit of $476,139, with an average profit margin of 40% and an average customer rating of 5.83.
+
+From the findings:
+
+- The Fashion Accessories and Home & Lifestyle categories dominate total revenue and inventory turnover, each exceeding $489K in sales and 139K in estimated turnover rate.
+- Meanwhile, Food & Beverages leads in net profit margin (40.31%), showing higher efficiency in cost management.
+- High-value customers tend to purchase from Sports & Travel, Health & Beauty, and Food & Beverages, which record the highest average order values.
+- Quarter 4 consistently shows peak revenue performance, with sales reaching $105K in 2023, suggesting strong seasonal demand during year-end promotions.
+- Payment data indicates that credit cards and e-wallets account for over 80% of all transactions, reflecting a strong customer shift toward digital payments.
+
 ## 📊 Analysis Breakdown
 
 ### Key Performance Indicator (KPI)
