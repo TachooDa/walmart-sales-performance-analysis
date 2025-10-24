@@ -133,3 +133,35 @@ FROM
 	inventory_turnover
 ORDER BY
 	est_inventory_turnover DESC;
+
+
+-- product category performance analysis
+SELECT * FROM walmart;
+WITH product_performance AS (
+SELECT 
+	category,
+	round(sum(unit_price::NUMERIC * quantity::numeric),0) AS total_revenue,
+	round(sum(unit_price::NUMERIC * quantity::NUMERIC * profit_margin::numeric),0) AS net_profit,
+	count(DISTINCT invoice_id) AS transaction_volume
+FROM walmart
+GROUP BY category
+), avg_value AS (
+	SELECT
+			avg(total_revenue) AS avg_revenue,
+			avg(net_profit) AS avg_profit
+	FROM product_performance
+)
+SELECT 
+	p.category,
+	p.total_revenue,
+	p.net_profit,
+	p.transaction_volume,
+	CASE
+		WHEN p.total_revenue >= av.avg_revenue 
+		AND p.net_profit >= av.avg_profit THEN 'High Performer'
+		WHEN p.total_revenue >= av.avg_revenue 
+		OR p.net_profit >= av.avg_profit THEN 'Mid Performer'
+		ELSE 'Low performer'
+	END AS product_segmentation
+FROM product_performance AS p, avg_value AS av
+ORDER BY  p.total_revenue DESC;
