@@ -59,20 +59,6 @@ From the findings:
 Which product category generates the highest average order value?
 
 [Found SQL query here](Scripts\business_metrix.sql)
-
-```sql
-SELECT
-	category,
-	round(sum(unit_price::NUMERIC * quantity::NUMERIC) /
-	count(DISTINCT invoice_id), 0) AS avg_order_value
-FROM
-	walmart
-GROUP BY
-	category
-ORDER BY
-	avg_order_value DESC;
-```
-
 ![aov_category](images/aov_category.png)
 
 #### Insight :
@@ -86,23 +72,6 @@ Question :
 Which categories contribute the most highest GMV?  
 [Found SQL query here](Scripts\business_metrix.sql)
 
-```sql
-WITH highest_gmv AS (
-	SELECT
-		category,
-		round(sum(unit_price::NUMERIC * quantity::NUMERIC), 0) AS gmv,
-		ROW_NUMBER() OVER(PARTITION BY category ORDER BY sum(unit_price::NUMERIC * quantity::NUMERIC) DESC) AS rn
-	FROM walmart
-	GROUP BY (1)
-)
-SELECT
-	category,
-	gmv
-FROM highest_gmv
-WHERE rn = 1
-ORDER BY gmv desc;
-```
-
 ![gmv](images/GMV_cat.png)
 
 #### Insight :
@@ -115,24 +84,6 @@ Question :
 
 Which product category achieves the highest profit efficiency (NPM)?  
 [Found SQL query here](Scripts\business_metrix.sql)
-
-```sql
-WITH profit_margin AS (
-	SELECT
-		category,
-		round(sum(unit_price::NUMERIC * quantity::NUMERIC), 0) AS total_revenue,
-		round(sum(unit_price::NUMERIC * quantity::NUMERIC * profit_margin::NUMERIC), 0) AS net_profit
-	FROM walmart
-	GROUP BY category
-)
-SELECT
-	category,
-	total_revenue,
-	net_profit,
-	round((net_profit / total_revenue)* 100.0, 2) AS net_profit_margin_pct
-FROM profit_margin
-ORDER BY net_profit_margin_pct DESC;
-```
 
 Table:
 | Category | Total Revenue | Net Profit | Net Profit Margin (%) |
@@ -158,25 +109,6 @@ Question :
 Does high turnover align with high sales or efficient stock movement?
 
 [Found SQL query here](Scripts\business_metrix.sql)
-
-```sql
-WITH inventory_turnover AS (
-	SELECT
-		category,
-		round(sum(unit_price::NUMERIC * quantity::NUMERIC * (1 - profit_margin::NUMERIC)), 0) AS cogs,
-		round(avg(quantity::NUMERIC), 0) AS avg_inventory
-		-- (estimasi dan asumsi)
-	FROM walmart
-	GROUP BY category
-)
-SELECT
-	category,
-	cogs,
-	avg_inventory,
-	round(cogs / avg_inventory, 0) AS est_inventory_turnover
-FROM inventory_turnover
-ORDER BY est_inventory_turnover DESC;
-```
 
 ### 📦 Estimated Inventory Turnover by Product Category
 
