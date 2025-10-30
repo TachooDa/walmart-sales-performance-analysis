@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="650px" src="images/walmart.jpg" alt="Walmart Logo"/>
+  <img width="700px" src="images/walmart.jpg" alt="Walmart Logo"/>
 </div>
 
 <h1 align="center">Walmart Sales & Profitability Performance Report</h1>
@@ -64,11 +64,6 @@ Customer purchasing behavior peaks in **Q4** each year, suggesting strong **seas
 
 **Question:** Which product category generates the highest average order value?
 
-#### 1️⃣ Average order Value per Category
-
-Which product category generates the highest average order value?
-
-[Found SQL query here](Scripts\business_metrix.sql)
 ![aov_category](images/aov_category.png)
 
 **Insight:**
@@ -80,13 +75,7 @@ Which product category generates the highest average order value?
 
 ### 2️⃣ Gross Merchandising Value (GMV)
 
-<<<<<<< HEAD
 **Question:** Which categories contribute most to total GMV?
-=======
-Which categories contribute the most highest GMV?  
-[Found SQL query here](Scripts\business_metrix.sql)
-
-> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![gmv](images/GMV_cat.png)
 
@@ -99,23 +88,7 @@ Which categories contribute the most highest GMV?
 
 ### 3️⃣ Net Profit Margin (NPM)
 
-<<<<<<< HEAD
 **Question:** Which product category achieves the best profit efficiency?
-=======
-Which product category achieves the highest profit efficiency (NPM)?  
-[Found SQL query here](Scripts\business_metrix.sql)
-
-Table:
-| Category | Total Revenue | Net Profit | Net Profit Margin (%) |
-|------------------------|---------------|-------------|------------------------|
-| Food and Beverages | 53,471 | 21,553 | **40.31** |
-| Health and Beauty | 46,851 | 18,672 | **39.85** |
-| Electronic Accessories | 78,175 | 30,772 | **39.36** |
-| Fashion Accessories | 489,481 | 192,315 | **39.29** |
-| Home and Lifestyle | 489,250 | 192,214 | **39.29** |
-| Sports and Travel | 52,498 | 20,614 | **39.27** |
-
-> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![net profit margin](images/net_pct_margin.png)
 
@@ -138,23 +111,7 @@ Table:
 
 ### 4️⃣ Inventory Turnover Efficiency
 
-<<<<<<< HEAD
 **Question:** Does high turnover align with efficient sales or stock movement?
-=======
-[Found SQL query here](Scripts\business_metrix.sql)
-
-### 📦 Estimated Inventory Turnover by Product Category
-
-| Category               | COGS (Cost of Goods Sold) | Avg. Inventory | Estimated Inventory Turnover |
-| ---------------------- | ------------------------- | -------------- | ---------------------------- |
-| Home and Lifestyle     | 297,036                   | 2.0            | **139,709**                  |
-| Fashion Accessories    | 297,166                   | 2.0            | **139,702**                  |
-| Electronic Accessories | 47,403                    | 4.0            | **13,294**                   |
-| Food and Beverages     | 31,918                    | 5.0            | **5,834**                    |
-| Sports and Travel      | 31,884                    | 6.0            | **5,753**                    |
-| Health and Beauty      | 28,179                    | 6.0            | **5,015**                    |
-
-> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![image](images/inventory_turnover.png)
 
@@ -187,16 +144,6 @@ Table:
 
 ---
 
-## 📈 Business Recomendation :
-
-- 1️⃣ Focus marketing and cross-selling efforts on Sports & Travel, Health & Beauty, and Food & Beverages, which show the highest AOV. These categories attract high-spending customers, so personalized promotions or bundle discounts could increase order frequency without lowering ticket size. For lower AOV categories, review pricing strategy or product bundling to lift average spend per transaction.
-- 2️⃣ Maintain strong momentum in Fashion Accessories and Home & Lifestyle, which are the top revenue drivers. However, to sustain long-term growth, consider developing targeted campaigns to boost underperforming categories like Electronics and Food & Beverages. This diversification reduces revenue dependency on a few product lines and supports balanced portfolio growth.
-- 3️⃣ While overall margins are stable across categories (~39–40%), focus on optimizing cost efficiency within Fashion Accessories and Home & Lifestyle, which, despite high sales, operate on thinner margins. A cost review or supplier negotiation in these categories could increase profitability. Additionally, replicate successful pricing or sourcing strategies from Food & Beverages, which demonstrates better margin efficiency.
-- 4️⃣ Ensure sufficient stock levels for Home & Lifestyle and Fashion Accessories, where rapid turnover reflects high demand. At the same time, evaluate inventory management for Health & Beauty and Sports & Travel, which show slower rotation — consider reducing order volume, running promotions, or optimizing SKU assortment to avoid capital lock-up in low-movement inventory.
-- 5️⃣ Leverage Q4’s strong seasonal momentum by planning early campaigns and inventory ramp-ups before peak season. To stabilize revenue across the year, explore strategies that drive engagement during off-peak quarters (Q2–Q3), such as mid-year promotions, loyalty programs, or special product launches. This helps smooth out sales volatility and maintain consistent cash flow.
-
----
-
 ## 💡 Key Recommendations
 
 | Area                  | Recommendation                                                             | Expected Impact          |
@@ -206,6 +153,14 @@ Table:
 | **Profitability**     | Review supplier terms in high-volume categories to lift margins.           | Improve NPM by +2–3%     |
 | **Customer Behavior** | Incentivize repeat purchases in **Sports & Travel** & **Health & Beauty**. | Boost AOV                |
 | **Seasonal Strategy** | Leverage Q4 trends with early marketing rollouts.                          | Sustain peak performance |
+
+## 📈 Business Recomendation :
+
+- 1️⃣ Focus marketing and cross-selling efforts on Sports & Travel, Health & Beauty, and Food & Beverages, which show the highest AOV. These categories attract high-spending customers, so personalized promotions or bundle discounts could increase order frequency without lowering ticket size. For lower AOV categories, review pricing strategy or product bundling to lift average spend per transaction.
+- 2️⃣ Maintain strong momentum in Fashion Accessories and Home & Lifestyle, which are the top revenue drivers. However, to sustain long-term growth, consider developing targeted campaigns to boost underperforming categories like Electronics and Food & Beverages. This diversification reduces revenue dependency on a few product lines and supports balanced portfolio growth.
+- 3️⃣ While overall margins are stable across categories (~39–40%), focus on optimizing cost efficiency within Fashion Accessories and Home & Lifestyle, which, despite high sales, operate on thinner margins. A cost review or supplier negotiation in these categories could increase profitability. Additionally, replicate successful pricing or sourcing strategies from Food & Beverages, which demonstrates better margin efficiency.
+- 4️⃣ Ensure sufficient stock levels for Home & Lifestyle and Fashion Accessories, where rapid turnover reflects high demand. At the same time, evaluate inventory management for Health & Beauty and Sports & Travel, which show slower rotation — consider reducing order volume, running promotions, or optimizing SKU assortment to avoid capital lock-up in low-movement inventory.
+- 5️⃣ Leverage Q4’s strong seasonal momentum by planning early campaigns and inventory ramp-ups before peak season. To stabilize revenue across the year, explore strategies that drive engagement during off-peak quarters (Q2–Q3), such as mid-year promotions, loyalty programs, or special product launches. This helps smooth out sales volatility and maintain consistent cash flow.
 
 ---
 
