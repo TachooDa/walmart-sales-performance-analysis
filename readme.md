@@ -1,144 +1,148 @@
-![walmart](images/walmart.jpg)
+<div align="center">
+  <img width="650px" src="images/walmart.jpg" alt="Walmart Logo"/>
+</div>
 
-# Walmart sales and Profitability Performance Analysis
+<h1 align="center">Walmart Sales & Profitability Performance Report</h1>
 
-# Dashboard Overview
+---
 
-![dashboard](images/walmart_dashboard.png)
+## 🏢 Project Background
 
-## 💻 Dataset Overview
+**Walmart** is one of the world’s leading retail corporations, with operations spanning across multiple regions and branches.  
+This project presents a detailed **sales and profitability performance analysis** based on transactional data collected between **2019 and 2023**, aiming to identify patterns in sales growth, profitability, and customer behavior.
 
-[you can find the dataset here](https://www.kaggle.com/datasets/najir0123/walmart-10k-sales-datasets) or
-[here](walmart_clean.csv)
+The analysis helps evaluate how product categories, customer preferences, and seasonal trends influence Walmart’s revenue and profit margins.
 
-This project uses a **Walmart Transactions Dataset**, containing sales records from multiple branches between **2019 and 2023**. The dataset provides transactional-level details used to analyze sales performance, customer behavior, and profitability metrics.
+---
+
+## 💾 Dataset Overview
+
+📘 **Dataset Source:**  
+[Walmart 10k Sales Dataset – Kaggle](https://www.kaggle.com/datasets/najir0123/walmart-10k-sales-datasets)  
+or local file: [`walmart_clean.csv`](walmart_clean.csv)
 
 ### 🧾 Data Schema
 
-| Column Name      | Data Type  | Description                                                     |
-| ---------------- | ---------- | --------------------------------------------------------------- |
-| `invoice_id`     | _string_   | Unique identifier for each transaction                          |
-| `branch`         | _string_   | Store branch code (e.g., A, B, C)                               |
-| `city`           | _string_   | City where the branch is located                                |
-| `category`       | _string_   | Product category purchased (e.g., Health & Beauty, Electronics) |
-| `unit_price`     | _float_    | Price per unit of the product sold                              |
-| `quantity`       | _integer_  | Number of units purchased per transaction                       |
-| `date`           | _datetime_ | Transaction date                                                |
-| `time`           | _datetime_ | Transaction time (used for shift analysis)                      |
-| `payment_method` | _string_   | Payment type used (Cash, Credit card, E-wallet)                 |
-| `rating`         | _float_    | Customer rating score (1–10 scale)                              |
-| `profit_margin`  | _float_    | Estimated margin percentage per transaction                     |
+| Column Name      | Data Type | Description                                     |
+| ---------------- | --------- | ----------------------------------------------- |
+| `invoice_id`     | string    | Unique identifier for each transaction          |
+| `branch`         | string    | Store branch code (A, B, C, etc.)               |
+| `city`           | string    | City where the branch is located                |
+| `category`       | string    | Product category purchased                      |
+| `unit_price`     | float     | Price per unit sold                             |
+| `quantity`       | integer   | Units purchased per transaction                 |
+| `date`           | datetime  | Transaction date                                |
+| `time`           | datetime  | Transaction time (used for shift analysis)      |
+| `payment_method` | string    | Payment type used (Cash, Credit card, E-wallet) |
+| `rating`         | float     | Customer satisfaction rating (1–10)             |
+| `profit_margin`  | float     | Estimated profit margin per transaction         |
 
-📊 _The dataset provides both transactional granularity and financial attributes, making it ideal for business performance analytics and insight generation._
+🕓 **Time Range:** 2019–2023  
+📊 **Records:** 9,969 transactions across 100 branches  
+💰 **Total Revenue:** $1.21M | **Net Profit:** $476K | **Avg. Margin:** 40%
 
-## ⚖ Finding Overview
+---
 
-The analysis is based on 9,969 transactions recorded across 100 branches between 2019 and 2023, generating a total revenue of $1.21 million and a net profit of $476,139, with an average profit margin of 40% and an average customer rating of 5.83.
+## 📈 Executive Summary
 
-From the findings:
+Walmart’s performance between **2019–2023** highlights a consistent profit margin across categories, with **Fashion Accessories** and **Home & Lifestyle** driving the majority of revenue.  
+Customer purchasing behavior peaks in **Q4** each year, suggesting strong **seasonal trends** tied to year-end promotions.
 
-- The Fashion Accessories and Home & Lifestyle categories dominate total revenue and inventory turnover, each exceeding $489K in sales and 139K in estimated turnover rate.
-- Meanwhile, Food & Beverages leads in net profit margin (40.31%), showing higher efficiency in cost management.
-- High-value customers tend to purchase from Sports & Travel, Health & Beauty, and Food & Beverages, which record the highest average order values.
-- Quarter 4 consistently shows peak revenue performance, with sales reaching $105K in 2023, suggesting strong seasonal demand during year-end promotions.
-- Payment data indicates that credit cards and e-wallets account for over 80% of all transactions, reflecting a strong customer shift toward digital payments.
+| Metric             | Value      | Description                      |
+| ------------------ | ---------- | -------------------------------- |
+| Total Transactions | 9,969      | Recorded across all branches     |
+| Total Revenue      | $1,209,726 | Aggregate revenue from 2019–2023 |
+| Net Profit         | $476,139   | Profit after deductions          |
+| Avg. Rating        | 5.83       | Average customer rating          |
+| Avg. Profit Margin | 40%        | Mean net profit ratio            |
 
-## 📊 Analysis Breakdown
+---
 
-### Key Performance Indicator (KPI)
+## 🧩 Analysis Breakdown
 
-- Total Transaksi: 9,969
-- Total Branch: 100
-- Total Revenue: $1,209,726
-- Net Profit: 476,139
-- Rata-rata rating produk: 5.83
-- Rata-rata Margin Profit: 0.4
+### 1️⃣ Average Order Value (AOV) per Category
 
-#### 1️⃣ Average order Value per Category
+**Question:** Which product category generates the highest average order value?
 
-Question :
-
-- Which product category generates the highest average order value?
-
-[Found SQL query here](Scripts\business_metrix.sql)
 ![aov_category](images/aov_category.png)
 
-#### Insight :
+**Insight:**
 
-Sports and Travel, Health and Beauty, and Food and Beverages are our top-performing categories by average order value (AOV), significantly outpacing the others. This suggests our strategy in these areas is effectively driving higher-value purchases.
+- **Sports & Travel**, **Health & Beauty**, and **Food & Beverages** categories attract **high-spending customers**.
+- This suggests that current marketing strategies effectively drive larger purchase values in these segments.
 
-#### 2️⃣ Gross Merchandising Value (GMV)
+---
 
-Question :
+### 2️⃣ Gross Merchandising Value (GMV)
 
-- Which categories contribute the most highest GMV?  
-  [Found SQL query here](Scripts\business_metrix.sql)
-  ![gmv](images/GMV_cat.png)
+**Question:** Which categories contribute most to total GMV?
 
-#### Insight :
+![gmv](images/GMV_cat.png)
 
-**Fashion Accessories** and **Home & Lifestyle** categories generate nearly identical and the highest _GMV_, indicating that these two product lines are the primary revenue drivers. However, the sharp drop in _GMV_ among other categories suggests potential opportunities to diversify sales or strengthen marketing efforts for underperforming segments like Electronics and Food & Beverages.
+**Insight:**
 
-#### 3️⃣ Net Profit Margin
+- **Fashion Accessories** and **Home & Lifestyle** generate the **highest GMV**, together dominating Walmart’s total sales.
+- Other categories show lower contribution, suggesting **potential for diversification** or **category marketing reinforcement**.
 
-Question :
+---
 
-- Which product category achieves the highest profit efficiency (NPM)?  
-  [Found SQL query here](Scripts\business_metrix.sql)
+### 3️⃣ Net Profit Margin (NPM)
 
-Table:
-| Category | Total Revenue | Net Profit | Net Profit Margin (%) |
-|------------------------|---------------|-------------|------------------------|
-| Food and Beverages | 53,471 | 21,553 | **40.31** |
-| Health and Beauty | 46,851 | 18,672 | **39.85** |
-| Electronic Accessories | 78,175 | 30,772 | **39.36** |
-| Fashion Accessories | 489,481 | 192,315 | **39.29** |
-| Home and Lifestyle | 489,250 | 192,214 | **39.29** |
-| Sports and Travel | 52,498 | 20,614 | **39.27** |
+**Question:** Which product category achieves the best profit efficiency?
 
 ![net profit margin](images/net_pct_margin.png)
 
-#### Insight :
+| Category               | Total Revenue | Net Profit | Net Profit Margin (%) |
+| ---------------------- | ------------- | ---------- | --------------------- |
+| Food & Beverages       | $53,471       | $21,553    | **40.31%**            |
+| Health & Beauty        | $46,851       | $18,672    | **39.85%**            |
+| Electronic Accessories | $78,175       | $30,772    | **39.36%**            |
+| Fashion Accessories    | $489,481      | $192,315   | **39.29%**            |
+| Home & Lifestyle       | $489,250      | $192,214   | **39.29%**            |
+| Sports & Travel        | $52,498       | $20,614    | **39.27%**            |
 
-1. Although all categories maintain a strong and consistent net profit margin (~39–40%), the Food & Beverages segment slightly outperforms others at 40.31%. This consistency suggests efficient cost control and a balanced pricing strategy across product lines — a sign of operational stability and profitability discipline.
-2. While Fashion Accessories and Home & Lifestyle generate the highest total revenue and absolute profit, their net profit margins are not the highest — both at around 39.29%. This suggests that these high-volume categories may operate on thinner margins due to competitive pricing or higher operational costs. Conversely, smaller segments like Food & Beverages achieve slightly better margin efficiency (40.31%), indicating stronger pricing power or better cost management despite lower overall sales volume.
+**Insight:**
 
-#### 4️⃣ Inventory Turnover
+- Profit margins are **stable (~39–40%)**, showing strong operational consistency.
+- **Food & Beverages** leads slightly, suggesting **effective cost control** despite smaller volume.
+- **Fashion Accessories** and **Home & Lifestyle** have thinner margins but larger scale, implying high sales but tighter competition.
 
-Question :
+---
 
-- Does high turnover align with high sales or efficient stock movement?
-  [Found SQL query here](Scripts\business_metrix.sql)
+### 4️⃣ Inventory Turnover Efficiency
 
-### 📦 Estimated Inventory Turnover by Product Category
-
-| Category               | COGS (Cost of Goods Sold) | Avg. Inventory | Estimated Inventory Turnover |
-| ---------------------- | ------------------------- | -------------- | ---------------------------- |
-| Home and Lifestyle     | 297,036                   | 2.0            | **139,709**                  |
-| Fashion Accessories    | 297,166                   | 2.0            | **139,702**                  |
-| Electronic Accessories | 47,403                    | 4.0            | **13,294**                   |
-| Food and Beverages     | 31,918                    | 5.0            | **5,834**                    |
-| Sports and Travel      | 31,884                    | 6.0            | **5,753**                    |
-| Health and Beauty      | 28,179                    | 6.0            | **5,015**                    |
+**Question:** Does high turnover align with efficient sales or stock movement?
 
 ![image](images/inventory_turnover.png)
 
-#### Insight :
+| Category               | COGS    | Avg. Inventory | Turnover    |
+| ---------------------- | ------- | -------------- | ----------- |
+| Home & Lifestyle       | 297,036 | 2.0            | **139,709** |
+| Fashion Accessories    | 297,166 | 2.0            | **139,702** |
+| Electronic Accessories | 47,403  | 4.0            | **13,294**  |
+| Food & Beverages       | 31,918  | 5.0            | **5,834**   |
+| Sports & Travel        | 31,884  | 6.0            | **5,753**   |
+| Health & Beauty        | 28,179  | 6.0            | **5,015**   |
 
-Home & Lifestyle and Fashion Accessories categories dominate inventory turnover — each exceeding 139K, far ahead of other segments. This indicates that these categories experience rapid stock movement and high consumer demand, reflecting strong sales performance and efficient inventory cycles. Conversely, categories such as Health & Beauty and Sports & Travel have much lower turnover, suggesting potential overstocking or slower product rotation that may tie up capital.
+**Insight:**
 
-#### 5️⃣ Quarterly Revenue Trend (2022-2023)
+- **Home & Lifestyle** and **Fashion Accessories** have extremely high turnover, reflecting strong demand and fast-moving stock.
+- Slower categories (**Health & Beauty**, **Sports & Travel**) may face **inventory inefficiencies** or **overstocking**.
 
-Question :
+---
 
-- Which quarter across 2022–2023 recorded the highest total revenue each year?
-  [Found Python Code Here](walmart_analysis.ipynb)
+### 5️⃣ Quarterly Revenue Trend (2022–2023)
+
+**Question:** Which quarter recorded the highest revenue?
 
 ![image](images/rev_ts.png)
 
-#### Insight :
+**Insight:**
 
-Revenue trends from 2022 to 2023 show clear quarterly fluctuations, with sharp spikes in Q4 of both years (reaching 100K in 2022Q4 and 105K in 2023Q4). This pattern indicates strong seasonal demand toward the end of the year — possibly due to holiday promotions or year-end sales campaigns. Meanwhile, mid-year quarters (Q2–Q3) remain relatively stable but lower, suggesting potential opportunities to balance sales performance throughout the year.
+- **Q4** consistently peaks in both 2022 and 2023 (up to **$105K**), reflecting strong **holiday season performance**.
+- **Q2–Q3** remain stable but lower — Walmart could explore **mid-year campaigns** to smooth seasonal fluctuations.
+
+---
 
 ## 📈 Business Recomendation :
 
@@ -148,14 +152,25 @@ Revenue trends from 2022 to 2023 show clear quarterly fluctuations, with sharp s
 - 4️⃣ Ensure sufficient stock levels for Home & Lifestyle and Fashion Accessories, where rapid turnover reflects high demand. At the same time, evaluate inventory management for Health & Beauty and Sports & Travel, which show slower rotation — consider reducing order volume, running promotions, or optimizing SKU assortment to avoid capital lock-up in low-movement inventory.
 - 5️⃣ Leverage Q4’s strong seasonal momentum by planning early campaigns and inventory ramp-ups before peak season. To stabilize revenue across the year, explore strategies that drive engagement during off-peak quarters (Q2–Q3), such as mid-year promotions, loyalty programs, or special product launches. This helps smooth out sales volatility and maintain consistent cash flow.
 
-## 💻 Technical Details
+---
 
-1. Database : [Walmar Dataset](walmart_clean.csv) / walmart_db
-2. Analysis Tools :
-   - Python
-   - PostgreSQL
-   - VS Code
-   - Dbeaver
-3. Visualization Tools :
-   - Python (Seaborn, Matplotlib, Pandas)
-   - Tableau
+## 💡 Key Recommendations
+
+| Area                  | Recommendation                                                             | Expected Impact          |
+| --------------------- | -------------------------------------------------------------------------- | ------------------------ |
+| **Sales**             | Strengthen off-season campaigns (Q1–Q2) to reduce sales gaps.              | Increase annual revenue  |
+| **Product**           | Focus inventory on **Fashion Accessories** & **Home & Lifestyle**.         | Reduce stockouts         |
+| **Profitability**     | Review supplier terms in high-volume categories to lift margins.           | Improve NPM by +2–3%     |
+| **Customer Behavior** | Incentivize repeat purchases in **Sports & Travel** & **Health & Beauty**. | Boost AOV                |
+| **Seasonal Strategy** | Leverage Q4 trends with early marketing rollouts.                          | Sustain peak performance |
+
+---
+
+## ⚙️ Technical Implementation
+
+**Tools Used**
+
+- Python (Pandas, Seaborn, Matplotlib)
+- SQL (PostgreSQL)
+- Tableau / Looker Studio
+- VS Code + DBeaver
