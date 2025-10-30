@@ -140,6 +140,24 @@ Question :
 
 Revenue trends from 2022 to 2023 show clear quarterly fluctuations, with sharp spikes in Q4 of both years (reaching 100K in 2022Q4 and 105K in 2023Q4). This pattern indicates strong seasonal demand toward the end of the year — possibly due to holiday promotions or year-end sales campaigns. Meanwhile, mid-year quarters (Q2–Q3) remain relatively stable but lower, suggesting potential opportunities to balance sales performance throughout the year.
 
+## 📈 Business Recomendation :
+
+- 1️⃣ Focus marketing and cross-selling efforts on Sports & Travel, Health & Beauty, and Food & Beverages, which show the highest AOV. These categories attract high-spending customers, so personalized promotions or bundle discounts could increase order frequency without lowering ticket size. For lower AOV categories, review pricing strategy or product bundling to lift average spend per transaction.
+- 2️⃣ Maintain strong momentum in Fashion Accessories and Home & Lifestyle, which are the top revenue drivers. However, to sustain long-term growth, consider developing targeted campaigns to boost underperforming categories like Electronics and Food & Beverages. This diversification reduces revenue dependency on a few product lines and supports balanced portfolio growth.
+- 3️⃣ While overall margins are stable across categories (~39–40%), focus on optimizing cost efficiency within Fashion Accessories and Home & Lifestyle, which, despite high sales, operate on thinner margins. A cost review or supplier negotiation in these categories could increase profitability. Additionally, replicate successful pricing or sourcing strategies from Food & Beverages, which demonstrates better margin efficiency.
+- 4️⃣ Ensure sufficient stock levels for Home & Lifestyle and Fashion Accessories, where rapid turnover reflects high demand. At the same time, evaluate inventory management for Health & Beauty and Sports & Travel, which show slower rotation — consider reducing order volume, running promotions, or optimizing SKU assortment to avoid capital lock-up in low-movement inventory.
+- 5️⃣ Leverage Q4’s strong seasonal momentum by planning early campaigns and inventory ramp-ups before peak season. To stabilize revenue across the year, explore strategies that drive engagement during off-peak quarters (Q2–Q3), such as mid-year promotions, loyalty programs, or special product launches. This helps smooth out sales volatility and maintain consistent cash flow.
+
+## 💡 Key Recommendations
+
+| Area                  | Recommendation                                                             | Expected Impact          |
+| --------------------- | -------------------------------------------------------------------------- | ------------------------ |
+| **Sales**             | Strengthen off-season campaigns (Q1–Q2) to reduce sales gaps.              | Increase annual revenue  |
+| **Product**           | Focus inventory on **Fashion Accessories** & **Home & Lifestyle**.         | Reduce stockouts         |
+| **Profitability**     | Review supplier terms in high-volume categories to lift margins.           | Improve NPM by +2–3%     |
+| **Customer Behavior** | Incentivize repeat purchases in **Sports & Travel** & **Health & Beauty**. | Boost AOV                |
+| **Seasonal Strategy** | Leverage Q4 trends with early marketing rollouts.                          | Sustain peak performance |
+
 ## 💻 Technical Details
 
 1. Database : [Walmar Dataset](walmart_clean.csv) / walmart_db
