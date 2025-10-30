@@ -62,8 +62,16 @@ Customer purchasing behavior peaks in **Q4** each year, suggesting strong **seas
 
 ### 1️⃣ Average Order Value (AOV) per Category
 
+<<<<<<< HEAD
 **Question:** Which product category generates the highest average order value?
 
+=======
+#### 1️⃣ Average order Value per Category
+
+Which product category generates the highest average order value?
+
+[Found SQL query here](Scripts\business_metrix.sql)
+>>>>>>> 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 ![aov_category](images/aov_category.png)
 
 **Insight:**
@@ -75,7 +83,12 @@ Customer purchasing behavior peaks in **Q4** each year, suggesting strong **seas
 
 ### 2️⃣ Gross Merchandising Value (GMV)
 
+<<<<<<< HEAD
 **Question:** Which categories contribute most to total GMV?
+=======
+Which categories contribute the most highest GMV?  
+[Found SQL query here](Scripts\business_metrix.sql)
+>>>>>>> 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![gmv](images/GMV_cat.png)
 
@@ -88,7 +101,22 @@ Customer purchasing behavior peaks in **Q4** each year, suggesting strong **seas
 
 ### 3️⃣ Net Profit Margin (NPM)
 
+<<<<<<< HEAD
 **Question:** Which product category achieves the best profit efficiency?
+=======
+Which product category achieves the highest profit efficiency (NPM)?  
+[Found SQL query here](Scripts\business_metrix.sql)
+
+Table:
+| Category | Total Revenue | Net Profit | Net Profit Margin (%) |
+|------------------------|---------------|-------------|------------------------|
+| Food and Beverages | 53,471 | 21,553 | **40.31** |
+| Health and Beauty | 46,851 | 18,672 | **39.85** |
+| Electronic Accessories | 78,175 | 30,772 | **39.36** |
+| Fashion Accessories | 489,481 | 192,315 | **39.29** |
+| Home and Lifestyle | 489,250 | 192,214 | **39.29** |
+| Sports and Travel | 52,498 | 20,614 | **39.27** |
+>>>>>>> 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![net profit margin](images/net_pct_margin.png)
 
@@ -111,7 +139,22 @@ Customer purchasing behavior peaks in **Q4** each year, suggesting strong **seas
 
 ### 4️⃣ Inventory Turnover Efficiency
 
+<<<<<<< HEAD
 **Question:** Does high turnover align with efficient sales or stock movement?
+=======
+[Found SQL query here](Scripts\business_metrix.sql)
+
+### 📦 Estimated Inventory Turnover by Product Category
+
+| Category               | COGS (Cost of Goods Sold) | Avg. Inventory | Estimated Inventory Turnover |
+| ---------------------- | ------------------------- | -------------- | ---------------------------- |
+| Home and Lifestyle     | 297,036                   | 2.0            | **139,709**                  |
+| Fashion Accessories    | 297,166                   | 2.0            | **139,702**                  |
+| Electronic Accessories | 47,403                    | 4.0            | **13,294**                   |
+| Food and Beverages     | 31,918                    | 5.0            | **5,834**                    |
+| Sports and Travel      | 31,884                    | 6.0            | **5,753**                    |
+| Health and Beauty      | 28,179                    | 6.0            | **5,015**                    |
+>>>>>>> 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![image](images/inventory_turnover.png)
 
