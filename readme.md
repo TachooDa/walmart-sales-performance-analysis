@@ -80,13 +80,11 @@ Which product category generates the highest average order value?
 
 ### 2️⃣ Gross Merchandising Value (GMV)
 
-<<<<<<< HEAD
 **Question:** Which categories contribute most to total GMV?
 =======
 Which categories contribute the most highest GMV?  
 [Found SQL query here](Scripts\business_metrix.sql)
 
-> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![gmv](images/GMV_cat.png)
 
@@ -99,9 +97,8 @@ Which categories contribute the most highest GMV?
 
 ### 3️⃣ Net Profit Margin (NPM)
 
-<<<<<<< HEAD
 **Question:** Which product category achieves the best profit efficiency?
-=======
+
 Which product category achieves the highest profit efficiency (NPM)?  
 [Found SQL query here](Scripts\business_metrix.sql)
 
@@ -114,8 +111,6 @@ Table:
 | Fashion Accessories | 489,481 | 192,315 | **39.29** |
 | Home and Lifestyle | 489,250 | 192,214 | **39.29** |
 | Sports and Travel | 52,498 | 20,614 | **39.27** |
-
-> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![net profit margin](images/net_pct_margin.png)
 
@@ -138,9 +133,7 @@ Table:
 
 ### 4️⃣ Inventory Turnover Efficiency
 
-<<<<<<< HEAD
 **Question:** Does high turnover align with efficient sales or stock movement?
-=======
 [Found SQL query here](Scripts\business_metrix.sql)
 
 ### 📦 Estimated Inventory Turnover by Product Category
@@ -153,8 +146,6 @@ Table:
 | Food and Beverages     | 31,918                    | 5.0            | **5,834**                    |
 | Sports and Travel      | 31,884                    | 6.0            | **5,753**                    |
 | Health and Beauty      | 28,179                    | 6.0            | **5,015**                    |
-
-> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![image](images/inventory_turnover.png)
 
