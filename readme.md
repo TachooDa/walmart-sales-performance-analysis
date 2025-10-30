@@ -62,16 +62,13 @@ Customer purchasing behavior peaks in **Q4** each year, suggesting strong **seas
 
 ### 1️⃣ Average Order Value (AOV) per Category
 
-<<<<<<< HEAD
 **Question:** Which product category generates the highest average order value?
 
-=======
 #### 1️⃣ Average order Value per Category
 
 Which product category generates the highest average order value?
 
 [Found SQL query here](Scripts\business_metrix.sql)
->>>>>>> 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 ![aov_category](images/aov_category.png)
 
 **Insight:**
@@ -88,7 +85,8 @@ Which product category generates the highest average order value?
 =======
 Which categories contribute the most highest GMV?  
 [Found SQL query here](Scripts\business_metrix.sql)
->>>>>>> 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
+
+> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![gmv](images/GMV_cat.png)
 
@@ -116,7 +114,8 @@ Table:
 | Fashion Accessories | 489,481 | 192,315 | **39.29** |
 | Home and Lifestyle | 489,250 | 192,214 | **39.29** |
 | Sports and Travel | 52,498 | 20,614 | **39.27** |
->>>>>>> 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
+
+> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![net profit margin](images/net_pct_margin.png)
 
@@ -154,7 +153,8 @@ Table:
 | Food and Beverages     | 31,918                    | 5.0            | **5,834**                    |
 | Sports and Travel      | 31,884                    | 6.0            | **5,753**                    |
 | Health and Beauty      | 28,179                    | 6.0            | **5,015**                    |
->>>>>>> 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
+
+> > > > > > > 434bfe77c1c4b55088d2f40c1e2417e1bf40b2da
 
 ![image](images/inventory_turnover.png)
 
