@@ -131,7 +131,7 @@ Question : How efficiently are we moving inventory ?
 
 Question: How has our revenue trajectory evolved over the past five years, and what does our average performance benchmark reveal about our growth story?
 
-![Image](Images/rev_yoy.png)
+![Image](images/rev_yoy.png)
 
 #### Insight :
 
