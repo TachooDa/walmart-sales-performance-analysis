@@ -2,6 +2,10 @@
 
 # Walmart sales and Profitability Performance Analysis
 
+# Project Overview
+
+This project presents a comprehensive business intelligence analysis of Walmart's sales and profitability performance using transactional data from 2019 to 2023. Through advanced SQL queries, Python analytics, and data visualization, we uncover critical insights that drive strategic decision-making for inventory management, marketing optimization, and revenue growth.
+
 # Dashboard Overview
 
 ![dashboard](images/walmart_dashboard.png)
@@ -11,7 +15,7 @@
 [you can find the dataset here](https://www.kaggle.com/datasets/najir0123/walmart-10k-sales-datasets) or
 [here](walmart_clean.csv)
 
-This project uses a **Walmart Transactions Dataset**, containing sales records from multiple branches between **2019 and 2023**. The dataset provides transactional-level details used to analyze sales performance, customer behavior, and profitability metrics.
+The dataset contains 9,969 transactions across 100 branches with detailed records including product categories, payment methods, customer ratings, and profit margins — providing a robust foundation for multi-dimensional business analysis.
 
 ### 🧾 Data Schema
 
@@ -31,60 +35,55 @@ This project uses a **Walmart Transactions Dataset**, containing sales records f
 
 📊 _The dataset provides both transactional granularity and financial attributes, making it ideal for business performance analytics and insight generation._
 
-## ⚖ Finding Overview
+# 📊 Executive Summary
 
-The analysis is based on 9,969 transactions recorded across 100 branches between 2019 and 2023, generating a total revenue of $1.21 million and a net profit of $476,139, with an average profit margin of 40% and an average customer rating of 5.83.
+### 🔑 Key Performance Indicator (KPI)
 
-From the findings:
-
-- The Fashion Accessories and Home & Lifestyle categories dominate total revenue and inventory turnover, each exceeding $489K in sales and 139K in estimated turnover rate.
-- Meanwhile, Food & Beverages leads in net profit margin (40.31%), showing higher efficiency in cost management.
-- High-value customers tend to purchase from Sports & Travel, Health & Beauty, and Food & Beverages, which record the highest average order values.
-- Quarter 4 consistently shows peak revenue performance, with sales reaching $105K in 2023, suggesting strong seasonal demand during year-end promotions.
-- Payment data indicates that credit cards and e-wallets account for over 80% of all transactions, reflecting a strong customer shift toward digital payments.
-
-## 📊 Analysis Breakdown
-
-### Key Performance Indicator (KPI)
-
-- Total Transaksi: 9,969
-- Total Branch: 100
-- Total Revenue: $1,209,726
+- Total Revenue: $1,2 Million
 - Net Profit: 476,139
-- Rata-rata rating produk: 5.83
-- Rata-rata Margin Profit: 0.4
+- Rata-rata Margin Profit: 40 %
+- Transaction Volume: 9,969
+- Customer Satisfaction: 5.83 / 10 Average Rating
+- Total Branch: 100
 
-#### 1️⃣ Average order Value per Category
+# Top Performing Categories
 
-Question :
+| **Metric**                               | **Leading Category**                   | **Performance**           |
+| ---------------------------------------- | -------------------------------------- | ------------------------- |
+| 💰 **Highest Revenue**                   | Fashion Accessories & Home & Lifestyle | **$489K each**            |
+| 🥇 **Best Profit Margin**                | Food & Beverages                       | **40.31%**                |
+| 🛒 **Highest AOV (Average Order Value)** | Sports & Travel                        | Premium customer spending |
+| 📦 **Fastest Inventory Turnover**        | Home & Lifestyle                       | **139,709 units**         |
 
-- Which product category generates the highest average order value?
+### 1️⃣ Average order Value (AOV) per Category
+
+Question : Which product category attract high-value customers?
 
 [Found SQL query here](Scripts\business_metrix.sql)
 ![aov_category](images/aov_category.png)
 
 #### Insight :
 
-Sports and Travel, Health and Beauty, and Food and Beverages are our top-performing categories by average order value (AOV), significantly outpacing the others. This suggests our strategy in these areas is effectively driving higher-value purchases.
+- An intriguing pattern of consumer behavior is shown by analysis. Sports & Travel is the clear winner in average order value, indicating that consumers are making large investment purchases when they interact with this category—imagine high-end baggage, exercise gear, or travel accessories that fetch higher price points. The AOV profiles of Food & Beverages and Health & Beauty are strikingly similar, reflecting steady premium expenditure in these everyday necessities.
+- The psychological differences between these high-performing groupings are especially intriguing. Aspirational spending is represented by sports and travel, as consumers engage in their fitness journeys or plan for future adventures. In the meantime, premium self-care is represented by Health & Beauty and Food & Beverages, where consumers are prepared to pay more for high-quality everyday products. This dual dynamic offers a potent opportunity: we can use the consistent premium nature of Health & Beauty to foster customer loyalty and repeat business, while utilizing the aspirational appeal of Sports & Travel to draw in new high-value clients.
 
-#### 2️⃣ Gross Merchandising Value (GMV)
+### 2️⃣ Gross Merchandising Value (GMV)
 
-Question :
+Question : Where does our revenue concentrate ?
 
-- Which categories contribute the most highest GMV?  
-  [Found SQL query here](Scripts\business_metrix.sql)
-  ![gmv](images/GMV_cat.png)
+[Found SQL query here](Scripts\business_metrix.sql)
+![gmv](images/GMV_cat.png)
 
 #### Insight :
 
-**Fashion Accessories** and **Home & Lifestyle** categories generate nearly identical and the highest _GMV_, indicating that these two product lines are the primary revenue drivers. However, the sharp drop in _GMV_ among other categories suggests potential opportunities to diversify sales or strengthen marketing efforts for underperforming segments like Electronics and Food & Beverages.
+- Two retail giants and a number of strong competitors are depicted in the GMV distribution. The two main pillars of our income structure are Fashion Accessories and Home & Lifestyle, which both produce GMV statistics that are almost equal at $489K. Customers who purchase for home décor are equally inclined to accessorize their personal style, and vice versa. This striking symmetry indicates that we've found perfect balance in these complementary areas.
+- But the sharp decline to the next tier, Electronic Accessories, at about $78K, exposes a weakness as well as an opportunity. We've developed strong strengths in the fashion and home goods industries, but we're missing out on a lot of income potential in other areas. The bright side? Electronics, Food & Beverages, and Sports & Travel all demonstrate healthy individual transaction values but just need increased client adoption and buy frequency. This is more of an issue with merchandising exposure and cross-category promotion than it is with product quality.
 
-#### 3️⃣ Net Profit Margin
+### 3️⃣ Net Profit Margin
 
-Question :
+Question : Which categories deliver the best profit efficiency?
 
-- Which product category achieves the highest profit efficiency (NPM)?  
-  [Found SQL query here](Scripts\business_metrix.sql)
+[Found SQL query here](Scripts\business_metrix.sql)
 
 Table:
 | Category | Total Revenue | Net Profit | Net Profit Margin (%) |
@@ -103,14 +102,13 @@ Table:
 1. Although all categories maintain a strong and consistent net profit margin (~39–40%), the Food & Beverages segment slightly outperforms others at 40.31%. This consistency suggests efficient cost control and a balanced pricing strategy across product lines — a sign of operational stability and profitability discipline.
 2. While Fashion Accessories and Home & Lifestyle generate the highest total revenue and absolute profit, their net profit margins are not the highest — both at around 39.29%. This suggests that these high-volume categories may operate on thinner margins due to competitive pricing or higher operational costs. Conversely, smaller segments like Food & Beverages achieve slightly better margin efficiency (40.31%), indicating stronger pricing power or better cost management despite lower overall sales volume.
 
-#### 4️⃣ Inventory Turnover
+### 4️⃣ Inventory Turnover Analysis
 
-Question :
+Question : How efficiently are we moving inventory ?
 
-- Does high turnover align with high sales or efficient stock movement?
-  [Found SQL query here](Scripts\business_metrix.sql)
+[Found SQL query here](Scripts\business_metrix.sql)
 
-### 📦 Estimated Inventory Turnover by Product Category
+#### 📦 Estimated Inventory Turnover by Product Category
 
 | Category               | COGS (Cost of Goods Sold) | Avg. Inventory | Estimated Inventory Turnover |
 | ---------------------- | ------------------------- | -------------- | ---------------------------- |
@@ -125,47 +123,70 @@ Question :
 
 #### Insight :
 
-Home & Lifestyle and Fashion Accessories categories dominate inventory turnover — each exceeding 139K, far ahead of other segments. This indicates that these categories experience rapid stock movement and high consumer demand, reflecting strong sales performance and efficient inventory cycles. Conversely, categories such as Health & Beauty and Sports & Travel have much lower turnover, suggesting potential overstocking or slower product rotation that may tie up capital.
+- With turnover rates surpassing 139,000, Home & Lifestyle and Fashion Accessories are the sprint champions. They reflect a fast-fashion, rapid-rotation model in which products disappear from shelves nearly as rapidly as they are replenished. Strong customer demand, efficient merchandising, and possibly time-limited product offerings that generate urgency are all suggested by this amazing pace.
+- On the other hand, categories like Health & Beauty and Sports & Travel work in an entirely different way. With turnover rates of around 5,000, these categories imply a slower, more deliberate buying cycle. Customers might investigate these things more thoroughly, wait for certain needs to materialize, or make planned rather than spontaneous purchases. The issue here is not necessarily bad performance, but rather capital allocation efficiency—we have money locked up in inventory that flows at a much slower rate.
+- The strategic opportunity is to recognize that varied turnover rates necessitate different operational methods. While slower-moving categories may benefit from lower inventory and higher individual margins, fast-turnover categories require strong supply chains and frequent replenishment.
 
-#### 5️⃣ Quarterly Revenue Trend (2022-2023)
+### 5️⃣ Year-over-Year Revenue Performance (2019-2023)
 
-Question :
+Question: How has our revenue trajectory evolved over the past five years, and what does our average performance benchmark reveal about our growth story?
 
-- Which quarter across 2022–2023 recorded the highest total revenue each year?
-  [Found Python Code Here](walmart_analysis.ipynb)
-
-![image](images/rev_ts.png)
+![Image](Images/rev_yoy.png)
 
 #### Insight :
 
-Revenue trends from 2022 to 2023 show clear quarterly fluctuations, with sharp spikes in Q4 of both years (reaching 100K in 2022Q4 and 105K in 2023Q4). This pattern indicates strong seasonal demand toward the end of the year — possibly due to holiday promotions or year-end sales campaigns. Meanwhile, mid-year quarters (Q2–Q3) remain relatively stable but lower, suggesting potential opportunities to balance sales performance throughout the year.
+- The year-over-year revenue analysis reveals a compelling narrative of resilience, recovery, and remarkable growth acceleration. Starting from a solid foundation in 2019 at $232,260, our journey through the pandemic era of 2020 ($217,405) shows remarkable stability despite global disruptions—a testament to our operational resilience and essential retail positioning. The real transformation begins in 2021 ($233,051) as we not only recovered but established new momentum, setting the stage for our breakthrough performance in 2022. The explosive growth to $307,587 in 2023 represents a stunning 32% increase from the previous year and places us 27% above our five-year average of $241,945.
+- We've transitioned from operating as a stable, predictable retailer to becoming a high-growth enterprise. The $65,000+ gap between our 2023 performance and the historical average suggests we've unlocked new growth drivers—whether through expanded product categories, improved customer experience, or enhanced operational efficiency.
 
 ## 📈 Business Recomendation :
 
-- 1️⃣ Focus marketing and cross-selling efforts on Sports & Travel, Health & Beauty, and Food & Beverages, which show the highest AOV. These categories attract high-spending customers, so personalized promotions or bundle discounts could increase order frequency without lowering ticket size. For lower AOV categories, review pricing strategy or product bundling to lift average spend per transaction.
-- 2️⃣ Maintain strong momentum in Fashion Accessories and Home & Lifestyle, which are the top revenue drivers. However, to sustain long-term growth, consider developing targeted campaigns to boost underperforming categories like Electronics and Food & Beverages. This diversification reduces revenue dependency on a few product lines and supports balanced portfolio growth.
-- 3️⃣ While overall margins are stable across categories (~39–40%), focus on optimizing cost efficiency within Fashion Accessories and Home & Lifestyle, which, despite high sales, operate on thinner margins. A cost review or supplier negotiation in these categories could increase profitability. Additionally, replicate successful pricing or sourcing strategies from Food & Beverages, which demonstrates better margin efficiency.
-- 4️⃣ Ensure sufficient stock levels for Home & Lifestyle and Fashion Accessories, where rapid turnover reflects high demand. At the same time, evaluate inventory management for Health & Beauty and Sports & Travel, which show slower rotation — consider reducing order volume, running promotions, or optimizing SKU assortment to avoid capital lock-up in low-movement inventory.
-- 5️⃣ Leverage Q4’s strong seasonal momentum by planning early campaigns and inventory ramp-ups before peak season. To stabilize revenue across the year, explore strategies that drive engagement during off-peak quarters (Q2–Q3), such as mid-year promotions, loyalty programs, or special product launches. This helps smooth out sales volatility and maintain consistent cash flow.
+1️⃣ Premium Category Expansion & Customer Experience :
 
-## 💡 Key Recommendations
+- Focus marketing and bundling strategies on Sports & Travel, Health & Beauty, and Food & Beverages to leverage their high average order values, implementing personalized promotions and VIP programs to attract and retain premium customers while increasing transaction frequency without compromising ticket size.
 
-| Area                  | Recommendation                                                             | Expected Impact          |
-| --------------------- | -------------------------------------------------------------------------- | ------------------------ |
-| **Sales**             | Strengthen off-season campaigns (Q1–Q2) to reduce sales gaps.              | Increase annual revenue  |
-| **Product**           | Focus inventory on **Fashion Accessories** & **Home & Lifestyle**.         | Reduce stockouts         |
-| **Profitability**     | Review supplier terms in high-volume categories to lift margins.           | Improve NPM by +2–3%     |
-| **Customer Behavior** | Incentivize repeat purchases in **Sports & Travel** & **Health & Beauty**. | Boost AOV                |
-| **Seasonal Strategy** | Leverage Q4 trends with early marketing rollouts.                          | Sustain peak performance |
+2️⃣ Revenue Diversification & Portfolio Balance
 
-## 💻 Technical Details
+- Maintain strong performance in Fashion Accessories and Home & Lifestyle while launching targeted campaigns to boost underperforming categories like Electronics and Food & Beverages, reducing dependency on top categories and creating a more resilient revenue mix through strategic partnerships and cross-category promotions.
 
-1. Database : [Walmar Dataset](walmart_clean.csv) / walmart_db
-2. Analysis Tools :
-   - Python
-   - PostgreSQL
-   - VS Code
-   - Dbeaver
-3. Visualization Tools :
-   - Python (Seaborn, Matplotlib, Pandas)
-   - Tableau
+3️⃣ Margin Optimization & Cost Effeciency
+
+- Enhance profitability by reviewing supplier terms and operational costs in high-volume Fashion and Home categories, while replicating the successful margin strategies from Food & Beverages across all segments to lift overall net profit margin through better pricing power and cost control.
+
+4️⃣ Intelligent Inventory Management
+
+- Optimize stock levels to support rapid turnover in Fashion and Home categories while addressing slower-moving inventory in Health & Beauty and Sports & Travel through promotions and assortment optimization, improving capital efficiency and reducing carrying costs without impacting product availability.
+
+5️⃣ Sustainable Growth Scaling & Performance Elevation
+
+- Capitalize on our breakthrough revenue trajectory by institutionalizing the growth drivers that propelled us 27% above our historical average, treating the $241,945 benchmark as our new performance floor while implementing scalable operational models, advanced forecasting, and strategic investments to ensure our accelerated growth becomes the sustainable new normal rather than a temporary peak.
+
+## 🎯 Strategic Action Plan
+
+| Focus Area                  | Key Recommendation                                                                                                                                                                  | Expected Impact                                                                      |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **📈 Revenue Growth**       | Launch targeted Q1-Q2 promotional campaigns and introduce subscription models to balance seasonal revenue fluctuations and create predictable income streams.                       | Increase annual revenue by 15-20% and reduce quarterly volatility by 30%             |
+| **📦 Inventory Excellence** | Implement AI-driven demand forecasting for Fashion Accessories & Home & Lifestyle categories while optimizing safety stock levels to prevent lost sales during peak demand periods. | Reduce stockouts by 40% and improve inventory turnover by 25%                        |
+| **💰 Margin Optimization**  | Renegotiate supplier contracts in high-volume categories and implement dynamic pricing strategies to capture maximum value while maintaining competitive positioning.               | Improve net profit margin by 2-3 percentage points within 12 months                  |
+| **👥 Customer Value**       | Develop loyalty programs and personalized bundle offers for Sports & Travel and Health & Beauty segments to increase purchase frequency and average order value.                    | Boost customer lifetime value by 25% and increase repeat purchase rate by 20%        |
+| **🎯 Peak Performance**     | Establish a dedicated seasonal planning team to execute early Q4 marketing campaigns and inventory buildup, leveraging historical data for optimal timing and product mix.          | Increase Q4 revenue capture by 15% and extend peak performance duration by 3-4 weeks |
+
+# 🛠️ Technical Implementation
+
+### 🔧 Tools & Technologies
+
+| **Category**                    | **Tools**                          |
+| ------------------------------- | ---------------------------------- |
+| 🧮 **Data Processing**          | Python (Pandas, NumPy), PostgreSQL |
+| 📊 **Analysis & Visualization** | Tableau, Seaborn, Matplotlib       |
+| 💻 **Development Environment**  | VS Code, DBeaver, Jupyter Notebook |
+| 🔄 **Version Control**          | Git, GitHub                        |
+
+### 🔄 Methodology & Project Workflow
+
+| **Stage**                         | **Description**                                  |
+| --------------------------------- | ------------------------------------------------ |
+| 🧹 **Data Collection & Cleaning** | Standardized dataset for consistency             |
+| 🧾 **SQL Analysis**               | Complex queries for business metrics calculation |
+| 📈 **Python Analytics**           | Trend & pattern analysis                         |
+| 🎨 **Data Visualization**         | Interactive dashboards and static charts         |
+| 💡 **Insight Generation**         | Actionable business recommendations              |
