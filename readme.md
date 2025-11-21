@@ -7,8 +7,8 @@
 This project presents a comprehensive business intelligence analysis of Walmart's sales and profitability performance using transactional data from 2019 to 2023. Through advanced SQL queries, Python analytics, and data visualization, we uncover critical insights that drive strategic decision-making for inventory management, marketing optimization, and revenue growth.
 
 # Dashboard Overview
-
-![dashboard](images/walmart_dashboard.png)
+Kamu bisa menemukan dashboard nya di link di bawah ini
+[dashboard](https://public.tableau.com/views/walmartbranchperfromanceanalysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## 💻 Dataset Overview
 
