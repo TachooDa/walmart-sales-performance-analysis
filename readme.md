@@ -7,8 +7,8 @@
 This project presents a comprehensive business intelligence analysis of Walmart's sales and profitability performance using transactional data from 2019 to 2023. Through advanced SQL queries, Python analytics, and data visualization, we uncover critical insights that drive strategic decision-making for inventory management, marketing optimization, and revenue growth.
 
 # Dashboard Overview
-
-![dashboard](images/walmart_dashboard.png)
+Kamu bisa menemukan dashboard nya di link di bawah ini
+[dashboard](https://public.tableau.com/views/walmartbranchperfromanceanalysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## 💻 Dataset Overview
 
@@ -131,11 +131,11 @@ Question : How efficiently are we moving inventory ?
 
 Question: How has our revenue trajectory evolved over the past five years, and what does our average performance benchmark reveal about our growth story?
 
-![Image](Images/rev_yoy.png)
+![Image](images/rev_yoy.png)
 
 #### Insight :
 
-- The year-over-year revenue analysis reveals a compelling narrative of resilience, recovery, and remarkable growth acceleration. Starting from a solid foundation in 2019 at $232,260, our journey through the pandemic era of 2020 ($217,405) shows remarkable stability despite global disruptions—a testament to our operational resilience and essential retail positioning. The real transformation begins in 2021 ($233,051) as we not only recovered but established new momentum, setting the stage for our breakthrough performance in 2022. The explosive growth to $307,587 in 2023 represents a stunning 32% increase from the previous year and places us 27% above our five-year average of $241,945.
+- The year-over-year revenue analysis reveals a compelling narrative of resilience, recovery, and remarkable growth acceleration. Starting from a solid foundation in 2019 at $307,587, our journey through the pandemic era of 2020 ($219,423) shows remarkable stability despite global disruptions—a testament to our operational resilience and essential retail positioning. The real transformation begins in 2021 ($233,051) as we not only recovered but established new momentum, setting the stage for our breakthrough performance in 2022. The explosive decrease to $217,406 in 2023 represents a stunning 6.83% increase from the previous year and places us 27% above our five-year average of $241,945.
 - We've transitioned from operating as a stable, predictable retailer to becoming a high-growth enterprise. The $65,000+ gap between our 2023 performance and the historical average suggests we've unlocked new growth drivers—whether through expanded product categories, improved customer experience, or enhanced operational efficiency.
 
 ## 📈 Business Recomendation :
