@@ -189,3 +189,71 @@ SELECT
 FROM yoy_diff
 WHERE prev_year_sales IS NOT NULL
 ORDER BY branch ASC; -- terendah (penurunan paling besar) di atas
+
+-- berapa average order value untuk masing-masing category produck
+SELECT * FROM walmart;
+WITH aov AS (
+SELECT 
+	category,
+	round(sum(unit_price::numeric * quantity::numeric),0) AS total_revenue,
+	count(DISTINCT invoice_id) AS inv_count
+FROM walmart
+GROUP BY 1
+)
+SELECT
+	category,
+	round((total_revenue / inv_count),0) AS aov
+FROM aov
+ORDER BY aov DESC;
+
+-- berapa aov per branch only on top 10
+WITH aov AS (
+SELECT 
+	city,
+	round(sum(unit_price::numeric * quantity::numeric),0) AS total_revenue,
+	count(DISTINCT invoice_id) AS inv_count
+FROM walmart
+GROUP BY 1
+)
+SELECT
+	city,
+	round((total_revenue / inv_count),0) AS aov
+FROM aov
+ORDER BY aov DESC;
+
+-- berapa revenue di tahun pertama dan tahun terkahir
+-- 2019
+SELECT
+	extract(YEAR FROM date) AS YEAR,
+	region,
+	round(
+        sum(
+            -- Gross Revenue
+            (unit_price::NUMERIC * quantity::NUMERIC) 
+            
+            -- Apply the adjustment (assuming profit_margin is the discount factor/rate)
+            * (1 - profit_margin::NUMERIC) 
+        ) 
+    , 0) AS sales_revenue
+FROM walmart
+WHERE EXTRACT(YEAR FROM date) = 2019
+GROUP BY 1,2
+ORDER BY sales_revenue DESC;
+
+-- 2023
+SELECT
+	extract(YEAR FROM date) AS YEAR,
+	region,
+	round(
+        sum(
+            -- Gross Revenue
+            (unit_price::NUMERIC * quantity::NUMERIC) 
+            
+            -- Apply the adjustment (assuming profit_margin is the discount factor/rate)
+            * (1 - profit_margin::NUMERIC) 
+        ) 
+    , 0) AS sales_revenue
+FROM walmart
+WHERE EXTRACT(YEAR FROM date) = 2023
+GROUP BY 1,2
+ORDER BY sales_revenue DESC;
