@@ -4,6 +4,7 @@
 
  <p style='text-align:center; font-weight:bold; font-size:2.0rem;font-family:arial;'> Walmart Branch Performance Report</p>
 <hr>
+
 <div style='border: 1px solid #d6d2d2ff; padding:20px; border-radius:10px'>
     <p style='text-align:center; font-size:1.8rem; font-weight:bold; font-family:consolas'>
     Client Background
@@ -26,6 +27,7 @@
     </p>
 </div>
 <br>
+
 <p style='text-align:center; font-size:2.0rem; font-weight:bold;font-color:white; font-family:consolas'>Executive Summary</p>
 <hr>
 <div style="border: 1px solid #d6d2d2ff; padding:20px; border-radius:10px;">
@@ -64,6 +66,7 @@
 </div>
 </div>
 <br>
+
 <p style='text-align:center; font-size:2.0rem; font-weight:bold;font-color:white; font-family:consolas'>Dataset Structure</p>
 <hr>
 <p>The database structure as seen below consist of one table with a total row count of 9.599 records</p>
@@ -86,6 +89,7 @@
 | `region`         | String    | Geographic region of branch            |
 
 <br>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -209,6 +213,7 @@
 </body>
 </html>
 <br>
+
 <p style='text-align:center; font-size:2.2rem; font-weight:bold;font-color:white; font-family:consolas'>Insight Deep-Dive</p>
 <hr>
 <p style='text-align:center; font-size:2.2rem; font-weight:bold;font-color:white; font-family:consolas'>Sales Trend</p>
@@ -271,6 +276,7 @@
  </div>
 </div>
 <br><br>
+
 <p style='text-align:center; font-size:1.7rem; font-weight:bold;font-color:white; font-family:consolas'>Sales Growth follows pronounced seasonal fluctuations, primarily driven by Order Volume, while AOV Growth remains relatively low and stable throughout the year. This indicates that the large revenue swings are a factor of how many orders are placed, rather than how much customers spend per transaction.
 </p>
 <hr>
@@ -318,8 +324,8 @@
         </div>
     </div>
 </div>
-
 <br>
+
 <div style='display: grid; grid-template-columns: 1fr; gap: 20px; border: 1px solid #d6d2d2ff; padding:20px; border-radius:5px'>
     <div style='display:grid; grid-template-columns: 1fr 1fr; gap:20px;'>
         <div style='border:1px solid #d6d2d2ff; padding:10px; border-radius:5px'>
@@ -337,6 +343,7 @@
     </div>
 </div>
 <br>
+
 <p style='text-align:center; font-size:1.7rem; font-weight:bold;font-color:white; font-family:consolas'>
 Payment Methods Program Learnings
 </p>
@@ -366,6 +373,7 @@ Payment Methods Program Learnings
     </ul>
 </div>
 <br>
+
 <p style='text-align:center; font-size:1.7rem; font-weight:bold;font-color:white; font-family:consolas'>
 Regional Results (2019 vs 2023)
 </p>
@@ -399,6 +407,7 @@ Regional Results (2019 vs 2023)
     </ul>
 </div>
 <br>
+
 <p style='text-align:left; font-size:3.0rem; font-weight:bold;font-color:white; font-family:consolas;'>
 Recommendation
 </p>
