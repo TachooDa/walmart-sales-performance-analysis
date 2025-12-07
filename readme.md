@@ -76,7 +76,7 @@ The database structure as seen below consists of one table with a total row coun
 
 ## Key Performance Indicators
 
-<table width=100%, height=auto>
+<table width=100%, height=auto align='center'>
 <tr>
 <td align="center"><b>Analysis Period</b><br/><h2>2019-2023</h2></td>
 <td align="center"><b>Order Period</b><br/><h2>1,825 days</h2></td>
