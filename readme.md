@@ -1,5 +1,5 @@
 <p align='center'>
-    <img src='wm_images/wm_2.png' alt="Your Project Logo" width="100%" height="auto"/>
+    <img src='wm_images/wm_3.jpeg' alt="Your Project Logo" width="100%" height="auto"/>
 </p>
 
 <h1 align="center">Walmart Branch Performance Report</h1>
@@ -14,10 +14,10 @@ Reporting to the head of operations, an in-depth analysis was conducted to evalu
 
 **NorthStar Metrics:**
 
-- **Sales Trends** - Focusing on key metrics of sales revenue, number of orders placed and average order value (AOV)
-- **Product Performance** - Analyzing different category lines, market impact, and branch ratings to inform product strategy
-- **Payment method evaluation** - Evaluating the effectiveness of different payment methods and providing recommendations to maximize customer convenience and retention
-- **Regional results** - Evaluating regional demand and product performance within regions to identify areas for improvement
+- **Sales Trends** - Focusing on key metrics of sales revenue, number of orders placed and average order value (AOV).
+- **Product Performance** - Analyzing different category lines, market impact, and branch ratings to inform product strategy.
+- **Payment method evaluation** - Evaluating the effectiveness of different payment methods and providing recommendations to maximize customer convenience and retention.
+- **Regional results** - Evaluating regional demand and product performance within regions to identify areas for improvement.
 
 ---
 
@@ -29,25 +29,25 @@ Reporting to the head of operations, an in-depth analysis was conducted to evalu
 
 **1. Revenue Growth and Peak Performance**
 
-- Q4 has always been the strongest period, with consistent sales and revenue consistently reaching $40,000, even though Q4 2020 was still affected by the COVID-19 pandemic
-- Q4 2021 saw the highest revenue ($46,402 in December 2021), making it the best performing period
-- Each Q4 has reached revenue of up to $40,000, and it also maintained strong sales in the final year, despite a downward trend that started afterward
+- Q4 has always been the strongest period, with consistent sales and revenue consistently reaching $40,000, even though Q4 2020 was still affected by the COVID-19 pandemic.
+- Q4 2021 saw the highest revenue ($46,402 in December 2021), making it the best performing period.
+- Each Q4 has reached revenue of up to $40,000, and it also maintained strong sales in the final year, despite a downward trend that started afterward.
 
 **2. Declining Trend in Every Early Quarter**
 
-- Sales anomalies and significant declines always occur in our early quarters (Q1-Q3), especially in Q2-Q3 with sales revenue of only $2,000-$4,000 per month during that quarter, marking the quarters with the lowest revenue
-- The Q2-Q3 revenue decline suggests a major downturn, likely caused by external branch conditions, reduced consumer demand or internal operational shifts
+- Sales anomalies and significant declines always occur in our early quarters (Q1-Q3), especially in Q2-Q3 with sales revenue of only $2,000-$4,000 per month during that quarter, marking the quarters with the lowest revenue.
+- The Q2-Q3 revenue decline suggests a major downturn, likely caused by external branch conditions, reduced consumer demand or internal operational shifts.
 
 **3. Quarterly Insights & Seasonal Trends**
 
-- Q4 of each year typically shows strong performance, likely due to seasonal shopping trends and marketing efforts
-- Q1 2023 started badly ($15,794 in January), but revenue still went up and down through Q1-Q3, but revenue quickly grew in Q4, signaling an overall peak performance compared to every Q1-Q3 in previous years
+- Q4 of each year typically shows strong performance, likely due to seasonal shopping trends and marketing efforts.
+- Q1 2023 started badly ($15,794 in January), but revenue still went up and down through Q1-Q3, but revenue quickly grew in Q4, signaling an overall peak performance compared to every Q1-Q3 in previous years.
 
 **4. Key Takeaways & Recommendations**
 
 - Investigate the causes of the every Q1-Q3 period decline for every year (e.g., market changes, competition, internal factors)
-- Leverage high-performing periods (e.g., Q4 of strong years) to refine marketing and branch sales strategies
-- Reassess business strategy for 2024, focusing on pricing, branch promotions and customer engagement to regain momentum
+- Leverage high-performing periods (e.g., Q4 of strong years) to refine marketing and branch sales strategies.
+- Reassess business strategy for 2024, focusing on pricing, branch promotions and customer engagement to regain momentum.
 
 ---
 
@@ -116,45 +116,45 @@ The database structure as seen below consists of one table with a total row coun
 
 **1. Sharp spike in Q4 2023 - A major sales peak performance**
 
-- Historically, Q4 (Nov-Dec) has been the strongest quarter due to holiday shopping (Black Friday, Cyber Monday, Christmas sales) and also in 2023 Q4 sales peak performance
-- December 2023 sales were UP compared to December in previous years (a 4.05% increase from the previous best December). However, December 2023 ($43,612) was 6.01% below the absolute monthly sales peak ($46,402) reached at the end of 2021 and repeated at the end of 2024
+- Historically, Q4 (Nov-Dec) has been the strongest quarter due to holiday shopping (Black Friday, Cyber Monday, Christmas sales) and also in 2023 Q4 sales peak performance.
+- December 2023 sales were UP compared to December in previous years (a 4.05% increase from the previous best December). However, December 2023 ($43,612) was 6.01% below the absolute monthly sales peak ($46,402) reached at the end of 2021 and repeated at the end of 2024.
 
 **2. Post Pandemic Sales Normalization (2020-2022)**
 
-- 2020 Sales Surge: The Pandemic led to a significant boost in retail sales, with Q2-Q4 2020 seeing a rapid increase (e.g., **Q4 2020 was nearly double Q4 2019**)
-- 2021 Slight Slowdown: Sales remained high but started stabilizing, showing a decline from pandemic peak levels, and also seeing rapid increase at Q4 period
-- 2022 Major Decline: An inconsistent drop in sales across all quarters suggests a post-pandemic correction, with inflation, lower consumer spending or increased competition
+- 2020 Sales Surge: The Pandemic led to a significant boost in retail sales, with Q2-Q4 2020 seeing a rapid increase (e.g., **Q4 2020 was nearly double Q4 2019**).
+- 2021 Slight Slowdown: Sales remained high but started stabilizing, showing a decline from pandemic peak levels, and also seeing rapid increase at Q4 period.
+- 2022 Major Decline: An inconsistent drop in sales across all quarters suggests a post-pandemic correction, with inflation, lower consumer spending or increased competition.
 
 **3. Declining growth throughout every quarter (Q1-Q3) period - indicating weak consumer demand**
 
-- For each quarter for Q1-Q3 in the period, it experienced ups and downward trends
-- Q1: Started fairly strong ($20,170 in Jan) and still higher than 2020
-- Q2-Q3: Sales declined sharply (especially from June to July) after the previous Q4 peak, with the steepest drop reaching 42% in 2021, then sales tended to stabilize or decline slowly at a low level until the end of Q3
-- Q4: The most consistent and strongest peak sales period, reaching an all-time high of $46,402 (occurring in 2021 and 2024). This pattern indicates very strong seasonal demand at the end of the year, which can be further optimized through pre-holiday and end-of-year campaign strategies
+- For each quarter for Q1-Q3 in the period, it experienced ups and downward trends.
+- Q1: Started fairly strong ($20,170 in Jan) and still higher than 2020.
+- Q2-Q3: Sales declined sharply (especially from June to July) after the previous Q4 peak, with the steepest drop reaching 42% in 2021, then sales tended to stabilize or decline slowly at a low level until the end of Q3.
+- Q4: The most consistent and strongest peak sales period, reaching an all-time high of $46,402 (occurring in 2021 and 2024). This pattern indicates very strong seasonal demand at the end of the year, which can be further optimized through pre-holiday and end-of-year campaign strategies.
 
 #### Average Order Value
 
 **1. Sharp AOV surge in 2019, followed by a Decline in 2020-2023**
 
-- 2019 saw the highest AOV decline, declined at $96 (Nov 2020) compared to $189 (Nov 2019), aligning with pandemic-driven branch retail boom
-- Post pandemic correction (2020-2022) led to a steady decline, with AOV in 2022 returning close to 2020 levels (~$96-$101)
+- 2019 saw the highest AOV decline, declined at $96 (Nov 2020) compared to $189 (Nov 2019), aligning with pandemic-driven branch retail boom.
+- Post pandemic correction (2020-2022) led to a steady decline, with AOV in 2022 returning close to 2020 levels (~$96-$101).
 
 **2. 2020-2023 AOV is lower and relatively more volatile compared to previous years**
 
 - **2020-2023 AOV fluctuates significantly between $114 (Apr) and $117 (Jun)**
-- Q4 2022 AOV is significantly lower than Q4 2020 & 2023, meaning holiday spending per order has dropped in 2022
+- Q4 2022 AOV is significantly lower than Q4 2020 & 2023, meaning holiday spending per order has dropped in 2022.
 
 **3. Long-Term AOV decline may indicate price sensitivity**
 
-- From a peak of ~$189 in 2019, AOV steadily dropped to ~$99 in 2023 which is ~47.62% drop
-- Over the span of four years, the change in AOV growth has been relatively constant, indicating minimal changes in category product pricing
-- AOV in 2020-2023 is likely to be a major factor in decline of sales that year
+- From a peak of ~$189 in 2019, AOV steadily dropped to ~$99 in 2023 which is ~47.62% drop.
+- Over the span of four years, the change in AOV growth has been relatively constant, indicating minimal changes in category product pricing.
+- AOV in 2020-2023 is likely to be a major factor in decline of sales that year.
 
 #### Order Count
 
-- **Total Orders dropped by ~39.5%** from the peak in December 2021 (451 orders) to the trough in July 2022 (around 120 orders), or from peak to trough in 2022
-- The most significant decline in order volume started in early 2022, with the count falling sharply from the peak of 451 orders (December 2021) to a low of approximately 120 orders (around mid-2022)
-- The consistent drop in order frequency is the primary driver of the lower sales revenue during the low-demand periods (Q1, Q2 and Q3), overwhelming the impact of minor fluctuations in average order value
+- **Total Orders dropped by ~39.5%** from the peak in December 2021 (451 orders) to the trough in July 2022 (around 120 orders), or from peak to trough in 2022.
+- The most significant decline in order volume started in early 2022, with the count falling sharply from the peak of 451 orders (December 2021) to a low of approximately 120 orders (around mid-2022).
+- The consistent drop in order frequency is the primary driver of the lower sales revenue during the low-demand periods (Q1, Q2 and Q3), overwhelming the impact of minor fluctuations in average order value.
 
 ---
 
@@ -172,23 +172,23 @@ The database structure as seen below consists of one table with a total row coun
 
 #### The Best and Worst
 
-- The Fashion Accessories category had consistently strong sales year over year totaling $454,531, and it is the highest revenue generating product overall
-- The second and third best performing products category in terms of sales are Home and Lifestyle ($453,878 total) and Electronic Accessories ($410,031 in total)
-- The Sport and Travel ($12,477 total) had extremely low sales compared to other products, with no sales record in multiple months
+- The Fashion Accessories category had consistently strong sales year over year totaling $454,531, and it is the highest revenue generating product overall.
+- The second and third best performing products category in terms of sales are Home and Lifestyle ($453,878 total) and Electronic Accessories ($410,031 in total).
+- The Sport and Travel ($12,477 total) had extremely low sales compared to other products, with no sales record in multiple months.
 
 #### AOV Over Time
 
-- The AOV peaked in 2019 at $158 and then declined in 2020 ($98) and we have a stable AOV in the next years
+- The AOV peaked in 2019 at $158 and then declined in 2020 ($98) and we have a stable AOV in the next years.
 - Home and Lifestyle ($117,649), Fashion accessories ($113,847) and Electronic Accessories ($39,000) are the biggest contributors to AOV
-- Home and Lifestyle, Health and Beauty, Food and Beverages and Electronic Accessories have relatively low price points on average. They are stable but do not significantly impact AOV
-- AOV is trending downward but mainly due to a decline of product sales
+- Home and Lifestyle, Health and Beauty, Food and Beverages and Electronic Accessories have relatively low price points on average. They are stable but do not significantly impact AOV.
+- AOV is trending downward but mainly due to a decline of product sales.
 
 #### Heat Map Findings
 
-- Consistent Q4 spikes, likely due to Black Friday, Cyber Monday and the holiday shopping season for several products
-- Biggest Q4 performer: Fashion Accessories, Home and Lifestyle saw the biggest spikes
-- Sales tend to drop in January and February after the holiday season in Q1
-- Fashion Accessories, Home and Lifestyle also Electronic Accessories maintain consistent demand as sales through Q1-Q3 remain relatively stable but lower than in Q4
+- Consistent Q4 spikes, likely due to Black Friday, Cyber Monday and the holiday shopping season for several products.
+- Biggest Q4 performer: Fashion Accessories, Home and Lifestyle saw the biggest spikes.
+- Sales tend to drop in January and February after the holiday season in Q1.
+- Fashion Accessories, Home and Lifestyle also Electronic Accessories maintain consistent demand as sales through Q1-Q3 remain relatively stable but lower than in Q4.
 
 <table>
 <tr>
@@ -220,10 +220,10 @@ The database structure as seen below consists of one table with a total row coun
 </tr>
 </table>
 
-- Digital payment methods (ewallet and credit card) drove a significant growth in order volume between 2019 and 2023. In 2023, the number of digital orders (Ewallet: 906, Credit Card: 973) outnumbered cash orders (356), indicating a permanent change in client preferences toward cashless payments
-- From 2019 to 2020, Average Order Value (AOV) decreased dramatically for all payment types. Cash AOV dropped from $153 to $99, while Ewallet declined from $147 to $99, indicating a significant decrease in transaction value at the start of the epidemic period
-- Despite a dip in 2020, AOV for digital payments (ewallet and credit card) continued to recover and stabilize. In 2023, the AOV for Ewallet and Cash hit its peak ($106), followed by Credit Card ($102), reflecting a resurgence in transaction value aided by cashless payments
-- AOV Cash, which peaked in 2019 ($153), was unable to sustain its dominance. Since 2022 and 2023, AOV for digital payments (e-wallets and credit cards) has reached or surpassed AOV Cash, indicating that customers who utilize digital payments are now consistently making purchases of the same or higher transaction value
+- Digital payment methods (ewallet and credit card) drove a significant growth in order volume between 2019 and 2023. In 2023, the number of digital orders (Ewallet: 906, Credit Card: 973) outnumbered cash orders (356), indicating a permanent change in client preferences toward cashless payments.
+- From 2019 to 2020, Average Order Value (AOV) decreased dramatically for all payment types. Cash AOV dropped from $153 to $99, while Ewallet declined from $147 to $99, indicating a significant decrease in transaction value at the start of the epidemic period.
+- Despite a dip in 2020, AOV for digital payments (ewallet and credit card) continued to recover and stabilize. In 2023, the AOV for Ewallet and Cash hit its peak ($106), followed by Credit Card ($102), reflecting a resurgence in transaction value aided by cashless payments.
+- AOV Cash, which peaked in 2019 ($153), was unable to sustain its dominance. Since 2022 and 2023, AOV for digital payments (e-wallets and credit cards) has reached or surpassed AOV Cash, indicating that customers who utilize digital payments are now consistently making purchases of the same or higher transaction value.
 
 ---
 
@@ -233,26 +233,26 @@ The database structure as seen below consists of one table with a total row coun
 
 **1. The DFW Metroplex region contributes the most sales revenue for products in each Walmart branch**
 
-- CAGR of 28.35% of total sales per product
-- $91,172 in 2023
+- CAGR of 28.35% of total sales per product.
+- $91,172 in 2023.
 
 **2. In contrast, Walmart branch sales have underperformed in the Far West Texas region**
 
 - Far West Texas region ranks lowest in terms of Sales Revenue
-- Despite starting from a very low base ($395 in 2019), this region showed remarkable growth to $2,088 in 2023
-- The average annual sales increase (CAGR) was approximately 51.63%
+- Despite starting from a very low base ($395 in 2019), this region showed remarkable growth to $2,088 in 2023.
+- The average annual sales increase (CAGR) was approximately 51.63%.
 
 **3. Central Texas: Emerging High-Potential Market**
 
-- Central Texas demonstrates the strongest combined performance with $52,414 in 2023 revenue and a 29.4% CAGR, the highest growth rate among major revenue-generating regions
-- This region contributes 23% of total revenue while maintaining growth momentum that exceeds even the DFW Metroplex
-- The company should prioritize expansion and marketing investments in Central Texas as it represents the best opportunity for substantial revenue gains with proven market demand and lower concentration risk than continuing to focus solely on DFW
+- Central Texas demonstrates the strongest combined performance with $52,414 in 2023 revenue and a 29.4% CAGR, the highest growth rate among major revenue-generating regions.
+- This region contributes 23% of total revenue while maintaining growth momentum that exceeds even the DFW Metroplex.
+- The company should prioritize expansion and marketing investments in Central Texas as it represents the best opportunity for substantial revenue gains with proven market demand and lower concentration risk than continuing to focus solely on DFW.
 
 **4. West and East Texas: Underperforming Regions Requiring Strategic Review**
 
-- West Texas and East Texas combine for only 12% of total revenue despite having four years of operation, with West Texas showing the slowest CAGR at 20.6% among all regions
-- Both regions have declining revenue share over the period, suggesting they are not keeping pace with company growth or market opportunities
-- Management should conduct a profitability analysis and competitive assessment to determine if these regions require operational improvements, increased marketing support, or strategic exit to reallocate resources to higher-performing markets
+- West Texas and East Texas combine for only 12% of total revenue despite having four years of operation, with West Texas showing the slowest CAGR at 20.6% among all regions.
+- Both regions have declining revenue share over the period, suggesting they are not keeping pace with company growth or market opportunities.
+- Management should conduct a profitability analysis and competitive assessment to determine if these regions require operational improvements, increased marketing support, or strategic exit to reallocate resources to higher-performing markets.
 
 ---
 
