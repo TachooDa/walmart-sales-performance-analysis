@@ -229,30 +229,37 @@ The database structure as seen below consists of one table with a total row coun
 
 ### Regional Results (2019 vs 2023)
 
-<img src='wm_images/rev_compare.png' alt="regional comparison" width="100%"/>
+<img src='wm_images/vs_2.png' alt="regional comparison" width="100%"/>
 
-**1. The DFW Metroplex region contributes the most sales revenue for products in each Walmart branch**
+**1. DFW Metroplex — Dominant Market Leader**
 
-- CAGR of 28.35% of total sales per product.
-- $91,172 in 2023.
+- Generated the highest 2023 revenue ($91,127), accounting for 39.4% of total sales.
+- Achieved a strong 28.3% CAGR, growing from $33,625 → $91,127.
+- Represents a high concentration risk, with nearly 40% of all company revenue centralized here.
 
-**2. In contrast, Walmart branch sales have underperformed in the Far West Texas region**
+**2. Central Texas — Fastest-Growing Major Market**
 
-- Far West Texas region ranks lowest in terms of Sales Revenue
-- Despite starting from a very low base ($395 in 2019), this region showed remarkable growth to $2,088 in 2023.
-- The average annual sales increase (CAGR) was approximately 51.63%.
+- Delivered $54,595 in 2023, contributing 23.6% of total revenue.
+- Recorded the highest CAGR among major markets at 29.8%, climbing from $19,229 → $54,595.
+- Shows powerful growth momentum while maintaining a solid revenue base.
 
-**3. Central Texas: Emerging High-Potential Market**
+**3. Far West Texas — Rapid Expansion from a Small Base**
 
-- Central Texas demonstrates the strongest combined performance with $52,414 in 2023 revenue and a 29.4% CAGR, the highest growth rate among major revenue-generating regions.
-- This region contributes 23% of total revenue while maintaining growth momentum that exceeds even the DFW Metroplex.
-- The company should prioritize expansion and marketing investments in Central Texas as it represents the best opportunity for substantial revenue gains with proven market demand and lower concentration risk than continuing to focus solely on DFW.
+- Leads all regions with an exceptional 51.3% CAGR, rising from $395 → $2,088.
+- Despite its growth pace, it contributes less than 1% of total revenue.
+- Remains the smallest and most emerging market in the portfolio.
 
-**4. West and East Texas: Underperforming Regions Requiring Strategic Review**
+**4. South Texas & Greater Houston — Stable Mid-Tier Performers**
 
-- West Texas and East Texas combine for only 12% of total revenue despite having four years of operation, with West Texas showing the slowest CAGR at 20.6% among all regions.
-- Both regions have declining revenue share over the period, suggesting they are not keeping pace with company growth or market opportunities.
-- Management should conduct a profitability analysis and competitive assessment to determine if these regions require operational improvements, increased marketing support, or strategic exit to reallocate resources to higher-performing markets.
+- South Texas: $30,144 in 2023 with a 26.8% CAGR (from $11,648).
+- Greater Houston: $28,425 in 2023 with a 27.2% CAGR (from $10,870).
+- Together they contribute 25.3% of total revenue, delivering steady, healthy growth.
+
+**5. West Texas & East Texas — Consistently Underperforming**
+
+- West Texas: Lowest CAGR at 20.6% (from $8,565 → $18,139).
+- East Texas: 23.5% CAGR (from $3,685 → $8,558).
+- Combined share only 11.5% of total revenue and show below-average performance.
 
 ---
 
@@ -292,20 +299,29 @@ Based on the uncovered insights, here are actionable items that Walmart Branch c
 
 ## Regional Strategy
 
-**Protect DFW Metroplex Leadership While Reducing Concentration Risk**
+**1. DFW Metroplex — Dominant Market Leader**
 
-- DFW Metroplex generates 40% of revenue ($91,127) with 28.35% CAGR, creating significant concentration risk. Maintain market leadership through competitive intelligence and customer retention programs while simultaneously investing aggressively in other high-performing regions to reduce dependency on a single market.
+- Generated the highest 2023 revenue ($91,127), accounting for 39.4% of total sales. Achieved a strong 28.3% CAGR, growing from $33,625 → $91,127. Represents a high concentration risk, with nearly 40% of all company revenue centralized here.
 
-**Aggressively Expand Central Texas Operations**
+**2. Central Texas — Fastest-Growing Major Market**
 
-- Central Texas shows the strongest combined performance with 29.4% CAGR and $52,414 revenue, representing the best growth opportunity. Increase marketing budget by 30%, accelerate new store openings in high-potential cities, and use this region as a testing ground for new initiatives before company-wide rollout.
+- Delivered $54,595 in 2023, contributing 23.6% of total revenue.
+  Recorded the highest CAGR among major markets at 29.8%, climbing from $19,229 → $54,595. Shows powerful growth momentum while maintaining a solid revenue base.
 
-**Strategic Decision Required for West and East Texas**
+**3. Far West Texas — Rapid Expansion from a Small Base**
 
-- These regions combine for only 12% of revenue with declining market share and West Texas showing the slowest 20.6% CAGR. Conduct a 90-day profitability analysis to determine whether to implement improvement interventions or strategically exit these markets. If maintaining presence, implement localized product assortments and community-focused campaigns; if unprofitable, reallocate resources to Central Texas and Greater Houston.
+- Leads all regions with an exceptional 51.3% CAGR, rising from $395 → $2,088. Despite its growth pace, it contributes less than 1% of total revenue. Remains the smallest and most emerging market in the portfolio.
 
-**Evaluate Far West Texas ROI**
+**4. South Texas & Greater Houston — Stable Mid-Tier Performers**
 
-- Despite 51.63% CAGR, this region contributes less than 1% of revenue ($2,088). Calculate true ROI including all operational costs and compare against opportunity costs of investing in higher-revenue regions. Unless serving a strategic test market purpose, consider consolidation to maximize resource efficiency.
+- South Texas: $30,144 in 2023 with a 26.8% CAGR (from $11,648).
+  Greater Houston: $28,425 in 2023 with a 27.2% CAGR (from $10,870).
+  Together they contribute 25.3% of total revenue, delivering steady, healthy growth.
+
+**5. West Texas & East Texas — Consistently Underperforming**
+
+- West Texas: Lowest CAGR at 20.6% (from $8,565 → $18,139).
+  East Texas: 23.5% CAGR (from $3,685 → $8,558).
+  Combined share only 11.5% of total revenue and show below-average performance.
 
 ---
