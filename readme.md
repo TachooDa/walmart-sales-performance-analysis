@@ -23,7 +23,7 @@ Reporting to the head of operations, an in-depth analysis was conducted to evalu
 
 <h1 align='center'>Executive Summary</h1>
 
-<img src='wm_images/sales_revenue.png' alt="sales revenue" width="100%"/>
+<img src='wm_images/sales_revenue.png' alt="sales revenue" width="100%" height='auto'/>
 
 ### Key Findings
 
@@ -108,9 +108,9 @@ The database structure as seen below consists of one table with a total row coun
 
 <h1 align='center'> Insight Deep-Dive</h1>
 <h1 align='center'>Sales Trend</h1>
-<img src="wm_images/sales_rev_2.png" width="100%">
-<img src="wm_images/aov.png" width="100%">
-<img src="wm_images/num_orders.png" width="100%">
+<img src="wm_images/sales_rev_2.png" width="100%" height='auto'>
+<img src="wm_images/aov.png" width="100%" height='auto'>
+<img src="wm_images/num_orders.png" width="100%" height='auto'>
 
 #### Sales Revenue
 
@@ -160,7 +160,7 @@ The database structure as seen below consists of one table with a total row coun
 
 **Sales Growth follows pronounced seasonal fluctuations, primarily driven by Order Volume, while AOV Growth remains relatively low and stable throughout the year. This indicates that the large revenue swings are a factor of how many orders are placed, rather than how much customers spend per transaction.**
 
-<img src='wm_images/sales vs aov.png' alt="sales revenue" width="100%"/>
+<img src='wm_images/sales vs aov.png' alt="sales revenue" width="100%" height='auto'/>
 
 ---
 
@@ -168,7 +168,7 @@ The database structure as seen below consists of one table with a total row coun
 
 **Product Sales Surged in 2020 but were not Sustained at High Levels**
 
-<img src='wm_images/prod_perform.png' alt="product performance" width="100%"/>
+<img src='wm_images/prod_perform.png' alt="product performance" width="100%" height='auto'/>
 
 #### The Best and Worst
 
@@ -194,11 +194,11 @@ The database structure as seen below consists of one table with a total row coun
 <tr>
 <td width="50%">
 <h4 align="center">AOV Over Time (2019-2023)</h4>
-<img src='wm_images/newplot.png' alt="aov over time" width="100%"/>
+<img src='wm_images/newplot.png' alt="aov over time" width="100%" height='auto';/>
 </td>
 <td width="50%">
 <h4 align="center">Product Sales Heatmap by Quarter</h4>
-<img src='wm_images/heatmap.png' alt="heatmap" width="100%"/>
+<img src='wm_images/heatmap.png' alt="heatmap" width="100%" height='auto'/>
 </td>
 </tr>
 </table>
@@ -211,11 +211,11 @@ The database structure as seen below consists of one table with a total row coun
 <tr>
 <td width="50%">
 <h4 align="center">Average Order Value by Payment Methods</h4>
-<img src='wm_images/aov_payment.png' alt="aov payment" width="100%"/>
+<img src='wm_images/aov_payment.png' alt="aov payment" width="100%" height='auto'/>
 </td>
 <td width="50%">
 <h4 align="center">Number of Orders by Payment Methods</h4>
-<img src='wm_images/orders_pm.png' alt="orders payment" width="100%"/>
+<img src='wm_images/orders_pm.png' alt="orders payment" width="100%" height='auto'/>
 </td>
 </tr>
 </table>
@@ -229,7 +229,7 @@ The database structure as seen below consists of one table with a total row coun
 
 ### Regional Results (2019 vs 2023)
 
-<img src='wm_images/vs_2.png' alt="regional comparison" width="100%"/>
+<img src='wm_images/vs_2.png' alt="regional comparison" width="100%" height='auto'/>
 
 **1. DFW Metroplex — Dominant Market Leader**
 
